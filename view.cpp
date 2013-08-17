@@ -113,7 +113,7 @@ void view::resizeGL(int w, int h){
     glViewport(0, 0, w, h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45.0, (double)w / (double)h, 1.0, 200.0);
+    perspective(45.0, (double)w / (double)h, 1.0, 200.0);
 }
 
 void view::mousePressEvent(QMouseEvent *event){
@@ -160,4 +160,14 @@ void view::tick(){
 
     // Flag this view for repainting (Qt will call paintGL() soon after)
     update();
+}
+
+void view::perspective( float fovyInDegrees, float aspectRatio, float znear, float zfar){
+    float ymax, xmax;
+    float temp, temp2, temp3, temp4;
+    ymax = znear * tanf(fovyInDegrees * 3.14159 / 360.0);
+    //ymin = -ymax;
+    //xmin = -ymax * aspectRatio;
+    xmax = ymax * aspectRatio;
+    glFrustum(-xmax, xmax, -ymax, ymax, znear, zfar);
 }

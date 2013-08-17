@@ -28,6 +28,7 @@ private:
 
     void keyPressEvent(QKeyEvent *);
     void keyReleaseEvent(QKeyEvent *);
+    void perspective( float fovyInDegrees, float aspectRatio, float znear, float zfar);
 
 signals:
     
