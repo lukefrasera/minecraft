@@ -15,6 +15,7 @@ public:
 private:
     QTime time;
     QTimer timer;
+    float rotX, rotY;
 
 
     void initializeGL();
