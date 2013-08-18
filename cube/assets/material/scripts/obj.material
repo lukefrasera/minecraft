@@ -1,0 +1,24 @@
+material 1336344995_1_0046_Gold
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 1.0 0.843137254901961 0.0 1.0
+      diffuse 1.0 0.843137254901961 0.0 1.0
+    }
+  }
+}
+material 1336344995_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+    }
+  }
+}

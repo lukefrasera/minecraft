@@ -1,0 +1,24 @@
+material 1336344933_1_0079_Teal
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 0.0 0.501960784313725 0.501960784313725 0.5
+      diffuse 0.0 0.501960784313725 0.501960784313725 0.5
+    }
+  }
+}
+material 1336344933_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+    }
+  }
+}
