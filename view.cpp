@@ -1,8 +1,10 @@
 #include "view.h"
+#include <cmath>
 
 #include <QApplication>
 #include <QKeyEvent>
-#include <gl/GLU.h>
+#include <GL/glu.h>
+#include <GL/freeglut.h>
 
 view::view(QWidget *parent) :
     QGLWidget(parent)
