@@ -3,6 +3,7 @@
 #include <QApplication>
 #include <QKeyEvent>
 #include <gl/GLU.h>
+#include <cmath>
 
 view::view(QWidget *parent) :
     QGLWidget(parent)
@@ -165,7 +166,7 @@ void view::tick(){
 void view::perspective( float fovyInDegrees, float aspectRatio, float znear, float zfar){
     float ymax, xmax;
     float temp, temp2, temp3, temp4;
-    ymax = znear * tanf(fovyInDegrees * 3.14159 / 360.0);
+    ymax = znear * tan(fovyInDegrees * 3.14159 / 360.0);
     //ymin = -ymax;
     //xmin = -ymax * aspectRatio;
     xmax = ymax * aspectRatio;
