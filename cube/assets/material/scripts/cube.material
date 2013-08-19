@@ -1,0 +1,29 @@
+material 1335850221_1_Material3
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 0.72156862745098 0.72156862745098 0.72156862745098 1.0
+      diffuse 0.72156862745098 0.72156862745098 0.72156862745098 1.0
+      // texture size: 39.6, 39.6
+      texture_unit
+      {
+        texture 1335850221_1_outline.png
+      }
+    }
+  }
+}
+material 1335850221_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+    }
+  }
+}

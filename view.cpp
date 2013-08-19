@@ -1,8 +1,9 @@
 #include "view.h"
+#include <cmath>
 
 #include <QApplication>
 #include <QKeyEvent>
-#include <gl/GLU.h>
+#include <GL/glu.h>
 #include <cmath>
 
 view::view(QWidget *parent) :

@@ -1,0 +1,46 @@
+material 1335851461_1_Material4
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 0.498039215686275 0.498039215686275 0.498039215686275 1.0
+      diffuse 0.498039215686275 0.498039215686275 0.498039215686275 1.0
+      // texture size: 39.99996, 79.99992
+      texture_unit
+      {
+        texture 1335851461_2_checker.png
+      }
+    }
+  }
+}
+material 1335851461_2_Material3
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 0.72156862745098 0.72156862745098 0.72156862745098 1.0
+      diffuse 0.72156862745098 0.72156862745098 0.72156862745098 1.0
+      // texture size: 39.6, 39.6
+      texture_unit
+      {
+        texture 1335851461_1_outline.png
+      }
+    }
+  }
+}
+material 1335851461_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      lighting on 
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+    }
+  }
+}
